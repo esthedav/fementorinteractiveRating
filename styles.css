@@ -56,7 +56,7 @@ p
 {
     width: 330px;
     height: 360px;
-    padding: 1em;
+    padding: 1em 1.5em;
     border-radius: 1em;
     background-color: var(--Dark-Blue);
 }
@@ -88,7 +88,7 @@ p
 /*? Componente calificanos */
 .star-logo
 {
-    margin-top: 2em;
+    margin-top: 1em;
     width: 2.5em;
     height: 2.5em;
     text-align: center;
@@ -103,7 +103,7 @@ p
 }
 .calificanos-texto
 {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
 }
 
 .calificacion-container
@@ -121,7 +121,6 @@ p
     text-align: center;
     background-color: var(--Dark-Blue);
     filter: brightness(1.3);
-    /* border: 1px solid white; */
 }
 .score:hover
 {
@@ -129,18 +128,48 @@ p
     color: var(--White);
     background-color: var(--Orange);
 }
-.score:focus
+.calificacion-container input
 {
-    color: var(--White);
-    background-color: var(--Light-Grey);
+    display: none;
 }
-
-
-
+input:checked + label p
+{
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+.btn
+{
+    height: 3em;
+    width: 100%;
+    border-radius: 2em;
+    border: none;
+    text-transform: uppercase;
+    font-weight: var(--Header-weight);
+    letter-spacing: 5px;
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.btn:hover
+{
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
 .attribution 
 {
     width: 330px;
     font-size: 11px; text-align: center; 
     color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 1200px)
+{
+    .card-container
+    {
+        width: 415px;
+        height: 415px;
+        padding: 2.5em 2.5em;
+        border-radius: 1em;
+        background-color: var(--Dark-Blue);
+    } 
 }
 
