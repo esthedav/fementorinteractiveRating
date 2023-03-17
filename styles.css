@@ -39,6 +39,10 @@ body
     font-family: var(--Default-font);
 }
 /*? Estilos Generales */
+h1
+{
+    color: var(--White);
+}
 h2
 {
     color: var(--White);

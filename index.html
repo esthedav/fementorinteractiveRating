@@ -11,55 +11,46 @@
 
 <body>
 
-  <div class="card-container inactive" id="gracias">
-    <figure class="gracias-logo">
-      <img src="./images/illustration-thank-you.svg" alt="gracias logo">
-    </figure>
-    <div class="seleccion-calificacion">
-      <p>You selected <span class="seleccion-calificacion__seleccion"></span> out of 5</p>
-    </div>
-    <div class="gracias-texto">
-      <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-    </div>
-  </div>
-
-  <div class="card-container" id="calificanos">
-    <figure class="star-logo">
-      <img src="./images/icon-star.svg" alt="star logo">
-    </figure>
-    <div class="calificanos-texto">
-      <h2>How did we do?</h2>
-      <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-    </div>
-    <form class="form-score"">
-      <div class="calificacion-container">
-
-        <input type="radio" name="calificacion" id="score1" value="1">
-        <label for="score1"><p class="score">1</p></label>
-
-        <input type="radio" name="calificacion" id="score2" value="2">
-        <label for="score2"><p class="score">2</p></label>
-
-        <input type="radio" name="calificacion" id="score3" value="3">
-        <label for="score3"><p class="score">3</p></label>
-
-        <input type="radio" name="calificacion" id="score4" value="4">
-        <label for="score4"><p class="score">4</p></label>
-
-        <input type="radio" name="calificacion" id="score5" value="5">
-        <label for="score5"><p class="score">5</p></label>
+  <main>
+    <div class="card-container inactive" id="gracias">
+      <figure class="gracias-logo">
+        <img src="./images/illustration-thank-you.svg" alt="gracias logo">
+      </figure>
+      <div class="seleccion-calificacion">
+        <p>You selected <span class="seleccion-calificacion__seleccion"></span> out of 5</p>
       </div>
+      <div class="gracias-texto">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
 
-      <button type="submit" class="btn">Submit</button>
-    </form>
-
-  </div> 
+    <div class="card-container" id="calificanos">
+      <figure class="star-logo">
+        <img src="./images/icon-star.svg" alt="star logo">
+      </figure>
+      <div class="calificanos-texto">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      </div>
+      <form class="form-score">
+        <div class="calificacion-container">
+          <input type="radio" name="calificacion" id="score1" value="1">
+          <label for="score1"><p class="score">1</p></label>
+          <input type="radio" name="calificacion" id="score2" value="2">
+          <label for="score2"><p class="score">2</p></label>
+          <input type="radio" name="calificacion" id="score3" value="3">
+          <label for="score3"><p class="score">3</p></label>
+          <input type="radio" name="calificacion" id="score4" value="4">
+          <label for="score4"><p class="score">4</p></label>
+          <input type="radio" name="calificacion" id="score5" value="5">
+          <label for="score5"><p class="score">5</p></label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Luis David Perez</a>.
-  </div>
   <script src="./main.js"></script>
 </body>
 </html>
